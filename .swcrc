@@ -7,7 +7,10 @@
       "tsx": false,
       "decorators": true
     },
-    "preserveAllComments": false
+    "preserveAllComments": false,
+    "minify": {
+      "mangle": true
+    }
   },
-  "minify": false
+  "minify": true
 }

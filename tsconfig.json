@@ -8,12 +8,14 @@
     "strict": true,
     "skipLibCheck": true,
     "baseUrl": ".",
+    "outDir": "build",
     "paths": {
       "@/*": ["./src/*"]
     }
   },
   "ts-node": {
     "esm": true,
+    "swc": true,
     "experimentalResolver": true,
     "experimentalSpecifierResolution": "node"
   }

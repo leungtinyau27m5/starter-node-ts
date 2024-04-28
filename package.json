@@ -8,6 +8,7 @@
     "dev": "nodemon",
     "prebuild": "rimraf build",
     "build": "swc ./src -d build --strip-leading-paths",
+    "postbuild": "tsc --declaration --emitDeclarationOnly",
     "lint": "eslint \"{src,apps,libs,test}/**/*.ts\" --fix",
     "format": "prettier --write \"src/**/*.ts\"",
     "update-deps": "npm-check-updates -i --format group",
@@ -34,6 +35,5 @@
     "prettier": "^3.2.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.4.5"
-  },
-  "dependencies": {}
+  }
 }
