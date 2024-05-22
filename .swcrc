@@ -10,7 +10,15 @@
     "preserveAllComments": false,
     "minify": {
       "mangle": true
+    },
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["./src/*"]
     }
   },
-  "minify": true
+  "minify": true,
+  "module": {
+    "type": "es6",
+    "resolveFully": true
+  }
 }
